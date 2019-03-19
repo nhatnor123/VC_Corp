@@ -1,0 +1,16 @@
+De lieu gom 26000 van ban train, 6500 van ban test
+Gom 13 nhan du lieu
+
+# Train
+---------------------
+- Folder: train
+- Gom 13 file tuong ung voi cac doc co nhan trung ten file
+- Moi file gom 2000 van ban da duoc tokenize, moi van ban nam trong 1 dong
+
+# Test
+---------------------
+- Folder test
+- Gom 2 file: data.txt va label.txt
+- File data.txt: file van ban, gom 6500 van ban da duoc tokenize, moi van ban nam trong 1 dong
+- File label.txt: File nhan cua du lieu test, moi dung la nhan cua van ban dong tuong ung trong file du lieu
+

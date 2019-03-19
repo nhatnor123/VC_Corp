@@ -5,16 +5,23 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HandleInput {
+	private long startTime, elapsedTime;
+	
+	
+	public long getElapsedTime() {
+		return elapsedTime;
+	}
 
 	public void HanleUrl(URL newURL) throws IOException {
 		// URL url = new URL("https://www.google.com");
 
 		HttpURLConnection connection = (HttpURLConnection) newURL.openConnection();
 		connection.setRequestMethod("GET");
+		startTime = System.currentTimeMillis();
 		connection.connect();
-
+		elapsedTime = System.currentTimeMillis()-startTime;
 		int code = connection.getResponseCode();
-
+		
 		System.out.println(code);
 
 //		switch (code / 100) {

@@ -15,11 +15,11 @@ public class Application {
 		URLFromFileConfig urlFileConfig = new URLFromFileConfig();
 
 		ArrayList<String> listURL = urlFileConfig.readURL("/home/nhatnor123/Desktop/listURL");
-
+					
 		for (String link : listURL) {
-
 			System.out.println("\n" + link);
 			inputHandle.HanleUrl(new URL(link));
+			System.out.println(inputHandle.getElapsedTime()+ " milliseconds");
 			System.out.println(LocalDateTime.now());
 
 		}
